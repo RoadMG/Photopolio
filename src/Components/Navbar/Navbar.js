@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom'
 import { useLocation } from 'react-router-dom';
 
 const Navbar = ({MenuChange, ContChange, ProjChange}) => {
+
   const [close, setClose] = useState(true);
   const [click, setClick] = useState(true);
 
@@ -58,7 +59,7 @@ const Navbar = ({MenuChange, ContChange, ProjChange}) => {
           <Link to='/about' className='n-about'>About</Link>
         </div>
 
-        <MenuIcon sx={{ fontSize: 30 }} color='#565453' className='n-menuicon'
+        <MenuIcon sx={{ fontSize: 45 }} color='#565453' className='n-menuicon'
           onClick={MenuClick} />
 
 

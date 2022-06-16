@@ -1,10 +1,20 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Navbar from '../Navbar/Navbar';
 import './contents.css'
 import {Link } from 'react-router-dom'
 
 
 const Contents = ({datas, link}) => {
+
+  const setScreenSize = () =>{
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty("--vh", `${vh}px`);
+  }
+  
+  useEffect(()=>{
+    setScreenSize();
+  });
+
   const [current, setCurrent] = useState(0);
   const length = datas.length;
   const [sorce, setSorce] =  useState(true);

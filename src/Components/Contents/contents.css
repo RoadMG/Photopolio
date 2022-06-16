@@ -1,6 +1,9 @@
 *{
   box-sizing: border-box;
 }
+:root{
+  --vh:100%;
+}
 .cont{
   height: 100vh;
 }
@@ -195,6 +198,11 @@ hr{
     padding: 10px 10px;
     z-index: 3;
     background-color: white;
+  }
+
+  .content{
+    height: calc(var(--vh, 1vh) * 100);
+    overflow: hidden;
   }
 
 }
