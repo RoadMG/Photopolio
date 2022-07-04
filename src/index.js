@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Home from './Components/Home/Home'
@@ -11,6 +11,8 @@ import {Citydata} from './Data/Citydata'
 import {Palacedata} from './Data/Palacdata'
 import {Architecturedata} from './Data/Architecturedata'
 import {Seadata} from './Data/Seadata'
+
+
 
 ReactDOM.render(
   <Router>

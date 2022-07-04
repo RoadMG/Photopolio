@@ -34,9 +34,13 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
     overflow: hidden;
     z-index: 2;
+}
+
+a.active{
+    color: rgb(43, 130, 43);
 }
 
 .n-main {
@@ -75,7 +79,7 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
     padding-left: 10px;
     width: 30vw;
     transform: translateY(1%);
